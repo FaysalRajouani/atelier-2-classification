@@ -123,8 +123,7 @@ with onglet_image:
                         st.error("Échec de la classification.")
                         st.exception(erreur)
     else:
-        st.info("Aucune image choisie. Le professeur peut importer une photo ici pour tester le modèle.")
-    st.warning("⚠️ Le modèle ne connaît que deux classes : **Voiture** et **Bateau**. Il donnera forcément l'une de ces classes même si l'image contient un autre objet.")
+        st.info("Aucune image choisie.")
 
 with onglet_resultats:
     st.subheader("Évaluation sur le jeu de test (20 % du dataset DB2C)")
